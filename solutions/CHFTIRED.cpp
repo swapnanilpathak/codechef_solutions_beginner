@@ -2,7 +2,7 @@
 #include <cstdio>
 #define ARBITRARY 10;
 using namespace std;
-bool sexychef(long a , long b);
+bool find(long a , long b);
 int main(){
 	int T = 0;
 	scanf("%d",&T);
@@ -11,7 +11,7 @@ int main(){
 		
 		scanf("%ld %ld",&a,&b);
 		
-		if(sexychef(a,b)==true){
+		if(find(a,b)==true){
 			printf("YES\n");
 		}else{
 			printf("NO\n");
@@ -20,7 +20,7 @@ int main(){
 	return 0;
 }
 
-bool sexychef(long a , long b){
+bool find(long a , long b){
 	int d = ARBITRARY;
 	if(a==b){
 		return true;
@@ -33,6 +33,6 @@ bool sexychef(long a , long b){
 	if(a == b){
 		return true;
 	}else{
-		sexychef(a,b);
+		find(a,b);
 	}
 }
